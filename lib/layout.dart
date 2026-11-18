@@ -11,9 +11,14 @@ class Layout extends StatelessWidget {
       color: Colors.deepPurple,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            color: Colors.red,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20.0,
+              vertical: 10.0,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -23,11 +28,15 @@ class Layout extends StatelessWidget {
               ],
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [MyCircle(text: "C")],
+          Container(
+            color: Colors.green,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [MyCircle(text: "C")],
+            ),
           ),
           Container(
+            color: Colors.blue,
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

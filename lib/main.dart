@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'clock.dart';
+import 'counter.dart';
+import 'dice.dart';
 import 'layout.dart';
+import 'like.dart';
 import 'name_card.dart';
 
 void main() {
@@ -29,7 +33,7 @@ class BUCSE extends StatelessWidget {
         //     // SizedBox(width: 10),
         //   ],
         // ),
-        body: SafeArea(child: Layout()),
+        body: SafeArea(child: ClockPage()),
 
         // bottomNavigationBar: BottomNavigationBar(
         //   items: const [
